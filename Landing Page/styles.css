@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background image */
+.section1{
+    position: relative;
+    top: 0;
+    height: 600px;
+    background-image: url("https://i.postimg.cc/QCtZzpj8/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+/* navigation styling */
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 24px;
+}
+.logo{
+    position: absolute;
+    right: 40%;
+}
+.menu-links a{
+    margin: 0px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #494949;
+}
+a.first{
+    background-color: #EB1700;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff !important;
+}
+a.first:hover{
+    background-color: #f35b4a;
+    transition: o.3s all;
+}
+a.second{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+/* End of Navigation */
+
+/* Input and sign in styling */
+
+.div-form{
+    margin-top: 220px;
+    width: 100%;
+}
+
+.all-input{
+    display: flex;
+    justify-content: center;
+}
+
+.heading h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "DD-TTNorms", "-apple-system", "BlinkMacSystemFont", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.input input{
+    width: 408px;
+    font-size: 20px;
+    padding: 20px 10px 20px 50px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+.input input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.input input:focus{
+    padding-left: 50px;
+    border: 1px solid blue;
+}
+.location{
+    margin-left: -400px;
+}
+.search{
+    margin-top: 12px;
+    margin-left: 330px;
+    background-color: #EB1700;
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border-radius: 50%;
+}
+.search .uil-arrow-right{
+    position: relative;
+    top: 4px;
+    left: 8px;
+    font-size: 24px;
+    color: #fff;
+
+}
+.location .uil{
+    position: relative;
+    top: 20px;
+    left: 6px;
+    font-size: 24px;
+    color: #494949;
+}
+.location-hover .uil:hover{
+    color: rgb(98, 98, 240) !important;
+}
+.user-icon{
+    margin-top: -5px !important;
+}
+.user-icon .uil{
+    margin-left: -215px;
+    margin-top: 30px !important;
+    font-size: 16px;
+    font-weight: 900;
+    color: black;
+    cursor: pointer;
+
+}
+.sign-user{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.user-btn{
+    padding: 10px 20px 10px 31px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #191919;
+    cursor: pointer;
+}
+
+/* END OF INPUT AND SIGN IN STYLING */
+
+/* START OF SECTION 2 STYLING */
+
+.section2{
+    margin: auto;
+    margin-top: 100px;
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    /* justify-content: center;
+    align-items: center; */
+    flex-flow: row;
+}
+.section2 img{
+    width: 150px;
+    height: 124px;
+}
+.dasher-img, .store-img, .iphone-img{
+    text-align: center;
+}
+.section2 h2{
+    font-size: 32px;
+    color: #191919;
+    text-align: center;
+    
+}
+.section2 p{
+    font-size: 18px;
+    color: #191919;
+    text-align: center;
+    padding: 10px 0px;
+    line-height: 1.7rem;
+}
+.anchor{
+    text-align: center;
+}
+.section2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #EB1700;
+    text-align: center;
+}
+.section2 .uil-arrow-right{
+    color: #EB1700;
+    font-size: 18px;
+}
+
+/* END OF SECTION 2 STYLING */
+

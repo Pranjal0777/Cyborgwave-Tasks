@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(34deg, #27319a 0%, #83afba 100%);
+    background-attachment: fixed;
+    color: #444;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #010c17;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+#todo-input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+#add-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #030d10;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+#add-btn:hover {
+    background-color: #009acD;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+    margin: 5px 0;
+    background: linear-gradient(135deg, #103328 0%, #185a9d 100%);
+    color: #fff;
+}
+
+li:hover {
+    background: linear-gradient(135deg, #103328 0%, #43cea2 100%);
+    transform: scale(1.02);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background: linear-gradient(135deg, #d3cce3 0%, #8ec5fc 100%);
+}
+
+button.delete-btn {
+    background: #0d0003;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+button.delete-btn:hover {
+    background: #6f5159;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    #add-btn {
+        padding: 10px 16px;
+    }
+
+    button.delete-btn {
+        padding: 6px;
+    }
+}
